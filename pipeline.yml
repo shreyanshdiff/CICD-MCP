@@ -1,0 +1,10 @@
+stages:
+  - name: Build
+    commands:
+      - docker build -t myapp .
+  - name: Test
+    commands:
+      - pytest tests/
+  - name: Deploy
+    commands:
+      - kubectl apply -f k8s/

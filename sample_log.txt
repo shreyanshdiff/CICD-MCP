@@ -1,0 +1,12 @@
+[Build] Starting Docker build...
+Step 1/8 : FROM python:3.10
+Step 8/8 : Successfully built abc123
+[Build] Done in 9m 32s
+
+[Test] Running pytest...
+tests/test_api.py::PASSED
+tests/test_db.py::PASSED
+Total test time: 6m 45s
+
+[Deploy] Applying manifests...
+deployment.apps/myapp created
